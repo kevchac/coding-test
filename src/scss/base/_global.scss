@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h3{
+    font-size: 2rem;
+    color: v.$primary_color;
+}

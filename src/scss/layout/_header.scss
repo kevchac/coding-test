@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+
+.navbar{
+    display: flex;
+    height: 236px;
+        & .navbar__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            & .list__item{
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: row-reverse;
+                &:first-child{
+                    margin-top: 0;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                & .list__link{
+                    margin-left: 0.81rem;
+                    text-decoration: none;
+                    color: v.$primary_color;       
+                    line-height: 1.25rem;    
+                    font-size: 0.875rem;  
+                    font-weight: bold;   
+                }
+
+
+            }
+            
+            & .list__bar{
+                width: 0.25rem;
+                border-radius: 14px;
+                color: black;
+                background-color: #0D1C3D;    
+                margin-left: -0.25rem;
+                
+                &--active{
+                    background-color: #0D1C3D;
+                }
+            }
+        }
+        & .navbar__bar{
+            width: 0.25rem;
+            border-radius: 14px;
+            color: black;
+            background-color: #E9EBEE;
+        }
+}
+
