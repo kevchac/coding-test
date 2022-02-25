@@ -1,16 +1,56 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
+.header{
+    margin-top: 1.42rem;
 
+}
 .navbar{
     display: flex;
     height: 236px;
+    margin-left: 1.05rem;
+
+    & .navbar__bar{
+        width: 0.25rem;
+        border-radius: 14px;
+        color: black;
+        background-color: #E9EBEE;
+    }
+    @include m.tablet {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        & .navbar__bar{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 15px;
+        }
+    }
         & .navbar__list {
             list-style: none;
             padding: 0;
             margin: 0;
+
+            @include m.tablet{
+                display: flex;
+            }
             & .list__item{
                 margin: 1rem 0;
                 display: flex;
                 flex-direction: row-reverse;
+                
+                @include m.tablet {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+
+                    & .list__bar{
+                        margin-top: 2rem;
+                        background-color: red;
+                        color: red;
+                    }
+                }
                 &:first-child{
                     margin-top: 0;
                 }
@@ -22,11 +62,15 @@
                     margin-left: 0.81rem;
                     text-decoration: none;
                     color: v.$primary_color;       
-                    line-height: 1.25rem;    
-                    font-size: 0.875rem;  
+                    line-height: 1.25rem;
+                    letter-spacing: 0.8px;    
+                    font-size: 0.90rem;  
                     font-weight: bold;   
-                }
 
+                    &--active{
+                        color: v.$bar_active;
+                    }
+                }
 
             }
             
@@ -34,19 +78,13 @@
                 width: 0.25rem;
                 border-radius: 14px;
                 color: black;
-                background-color: #0D1C3D;    
+                background-color: v.$bar;    
                 margin-left: -0.25rem;
                 
                 &--active{
-                    background-color: #0D1C3D;
+                    background-color: v.$bar_active;
                 }
             }
-        }
-        & .navbar__bar{
-            width: 0.25rem;
-            border-radius: 14px;
-            color: black;
-            background-color: #E9EBEE;
         }
 }
 
