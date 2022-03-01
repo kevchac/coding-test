@@ -14,40 +14,40 @@
     <header class="header">
         <nav class="navbar">
             <div class="navbar__bar"></div>
-            <ul class="navbar__list">
-                <li class="list__item">
-                    <a class="list__link list__link--active" href="#">Tab Label 1</a>
+            <ul role="tablist" class="navbar__list">
+                <li role="none" class="list__item">
+                    <a autofocus role="tab" aria-selected="true" aria-controls="1-content-panel" class="list__link list__link--active" href="#">Tab Label 1</a>
                     <div class="list__bar list__bar--active"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 2</a>
+                    <a role="tab" aria-selected="false" aria-controls="2-content-panel" class="list__link" href="#">Tab Label 2</a>
                     <div class="list__bar"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 3</a>
+                    <a role="tab" aria-selected="false" aria-controls="3-content-panel" class="list__link" href="#">Tab Label 3</a>
                     <div class="list__bar"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 4</a>
+                    <a role="tab" aria-selected="false" aria-controls="4-content-panel" class="list__link" href="#">Tab Label 4</a>
                     <div class="list__bar"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 5</a>
+                    <a role="tab" aria-selected="false" aria-controls="5-content-panel" class="list__link" href="#">Tab Label 5</a>
                     <div class="list__bar"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 6</a>
+                    <a role="tab" aria-selected="false" aria-controls="6-content-panel" class="list__link" href="#">Tab Label 6</a>
                     <div class="list__bar"></div>
                 </li>
                 <li class="list__item">
-                    <a class="list__link" href="#">Tab Label 7</a>
+                    <a role="tab" aria-selected="false" aria-controls="7-content-panel" class="list__link" href="#">Tab Label 7</a>
                     <div class="list__bar"></div>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main__container">
-        <section class="container container--active">
+        <section role="tabpanel" class="container container--active">
             <h3 class="container__title">Tab Label 1</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -69,7 +69,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container" class="container">
+        <section role="tabpanel" class="container" class="container">
             <h3 class="container__title">Tab Label 2</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -91,7 +91,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container">
+        <section role="tabpanel" class="container">
             <h3 class="container__title">Tab Label 3</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -113,7 +113,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container">
+        <section role="tabpanel" class="container">
             <h3 class="container__title">Tab Label 4</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -135,7 +135,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container">
+        <section role="tabpanel" class="container">
             <h3 class="container__title">Tab Label 5</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -157,7 +157,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container">
+        <section role="tabpanel" class="container">
             <h3 class="container__title">Tab Label 6</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -179,7 +179,7 @@
                 <p class="img__text">Surtsey, siteen days after the onset of the eruption</p>
             </div>
         </section>
-        <section class="container">
+        <section role="tabpanel" class="container">
             <h3 class="container__title">Tab Label 7</h3>
                 <p class="container__text">Surtsey ("Surtr's island" in Icelandic, Icelandic pronunciation:
                     ​[ˈsʏr̥(t)sˌeiː]) is a volcanic island located in the Vestmannaeyjar 
@@ -203,6 +203,7 @@
         </section>
     </main>
 
+    <script src="build/js/helpers.js"></script>
     <script src="build/js/app.js"></script>
 </body>
 </html>
